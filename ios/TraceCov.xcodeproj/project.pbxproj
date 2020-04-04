@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TraceCovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TraceCovTests.m */; };
 		08F65F0174D1FB2B280FB044 /* libPods-TraceCov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCDA536B275DF1ED56297DA /* libPods-TraceCov.a */; };
+		0C3C89BC2438961C004F0F85 /* libreact-native-ble-peripheral.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3C89BB2438961C004F0F85 /* libreact-native-ble-peripheral.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -54,6 +55,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TraceCovTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraceCovTests.m; sourceTree = "<group>"; };
 		0293E084D017461381F52BB5 /* libRCTBluetoothSerial.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBluetoothSerial.a; sourceTree = "<group>"; };
+		0C3C89B824388E45004F0F85 /* libreact-native-ble-peripheral.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-ble-peripheral.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3C89BB2438961C004F0F85 /* libreact-native-ble-peripheral.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-ble-peripheral.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCDA536B275DF1ED56297DA /* libPods-TraceCov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TraceCov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* TraceCov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraceCov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TraceCov/AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3C89BC2438961C004F0F85 /* libreact-native-ble-peripheral.a in Frameworks */,
 				08F65F0174D1FB2B280FB044 /* libPods-TraceCov.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +159,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C3C89BB2438961C004F0F85 /* libreact-native-ble-peripheral.a */,
+				0C3C89B824388E45004F0F85 /* libreact-native-ble-peripheral.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				0CCDA536B275DF1ED56297DA /* libPods-TraceCov.a */,
@@ -330,7 +336,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 8N9XS7RESJ;
+						DevelopmentTeam = 933DU48GJ5;
 						LastSwiftMigration = 1140;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -813,7 +819,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8N9XS7RESJ;
+				DEVELOPMENT_TEAM = 933DU48GJ5;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -826,6 +832,11 @@
 				INFOPLIST_FILE = TraceCov/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
@@ -846,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8N9XS7RESJ;
+				DEVELOPMENT_TEAM = 933DU48GJ5;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",

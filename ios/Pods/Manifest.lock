@@ -317,6 +317,8 @@ PODS:
   - React-jsinspector (0.62.0)
   - react-native-ble-manager (7.2.0):
     - React
+  - react-native-ble-peripheral (2.0.1):
+    - React
   - react-native-ble-plx (1.1.1):
     - React
     - react-native-ble-plx-swift
@@ -438,6 +440,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-ble-manager (from `../node_modules/react-native-ble-manager`)
+  - react-native-ble-peripheral (from `../node_modules/react-native-ble-peripheral`)
   - react-native-ble-plx (from `../node_modules/react-native-ble-plx`)
   - react-native-ble-plx-swift (from `../node_modules/react-native-ble-plx`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -527,6 +530,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-ble-manager:
     :path: "../node_modules/react-native-ble-manager"
+  react-native-ble-peripheral:
+    :path: "../node_modules/react-native-ble-peripheral"
   react-native-ble-plx:
     :path: "../node_modules/react-native-ble-plx"
   react-native-ble-plx-swift:
@@ -621,6 +626,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 8bf0b2707f05865113415088c398a7f98c0cf546
   React-jsinspector: 8e5913c4c6c54f0d3f9c9fc630c465a89cded65d
   react-native-ble-manager: fda5f6b20092f2b2d356676bd1f3dc7065bb4329
+  react-native-ble-peripheral: 9e487ba9ba5e8ead30b45afba66ee17fe470e349
   react-native-ble-plx: 304c7bee074a05581672c9990f375b3906808718
   react-native-ble-plx-swift: eb64f02b988becb84a60164aba9fab5d6ddb6dc8
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
@@ -648,6 +654,6 @@ SPEC CHECKSUMS:
   Yoga: 9db9ff2025ad21d1ac0a8b3c85d5ac4e7c29d525
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 0114f03ecdd68264dc18a69f76e239a32f29b72d
+PODFILE CHECKSUM: 55c76f083a1191cddcb79fadfc0b61881442b5f6
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.0.beta.2
